@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f6f6fe;
+}
+
+header {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+header,
+main {
+  max-width: Min(90%, 1000px);
+  margin: auto;
+}
+
+.card {
+  margin: 1rem 0;
+  padding: 1.5rem;
+  background-color: white;
+  color: #6d708d;
+  text-align: center;
+}
+
+.tier {
+  font-size: 1.1rem;
+}
+
+.price {
+  padding: 1.5rem 0;
+  color: #494c5f;
+  font-size: 4.5rem;
+}
+
+.dollar {
+  font-size: 2.5rem;
+}
+
+.features {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.feature {
+  padding: 1rem 0;
+  border-top: 1px solid #b3b5c6;
+}
+
+.feature--last {
+  border-bottom: 1px solid #b3b5c6;
+}
+
+.more-btn {
+  padding: 1rem 0;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(#a3a8f0, #696fdd);
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  border-radius: 7px;
+}
+/*# sourceMappingURL=style.css.map */

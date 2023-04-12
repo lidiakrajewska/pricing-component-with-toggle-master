@@ -1,0 +1,84 @@
+$v-light-grayish-blue: hsl(240, 78%, 98%);
+$light-grayish-blue: hsl(234, 14%, 74%);
+$grayish-blue: hsl(233, 13%, 49%);
+$dark-grayish-blue: hsl(232, 13%, 33%);
+$gradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+$font: "Montserrat", sans-serif;
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font;
+  background-color: $v-light-grayish-blue;
+}
+
+header {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+header,
+main {
+  max-width: Min(90%, 1000px);
+  margin: auto;
+}
+
+.card {
+  margin: 1rem 0;
+  padding: 1.5rem;
+  background-color: white;
+  color: $grayish-blue;
+  text-align: center;
+}
+
+.tier {
+  font-size: 1.1rem;
+}
+
+.price {
+  padding: 1.5rem 0;
+  color: $dark-grayish-blue;
+  font-size: 4.5rem;
+}
+
+.dollar {
+  font-size: 2.5rem;
+}
+
+.features {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.feature {
+  padding: 1rem 0;
+  border-top: 1px solid $light-grayish-blue;
+}
+
+.feature--last {
+  border-bottom: 1px solid $light-grayish-blue;
+}
+
+.more-btn {
+  padding: 1rem 0;
+  width: 100%;
+  background: $gradient;
+  font-family: $font;
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  border-radius: 7px;
+}
