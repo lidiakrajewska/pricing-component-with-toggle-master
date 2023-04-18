@@ -84,8 +84,6 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 ### Continued development
 
 - how to make custom toggle
-- gradient direction on buttons and card
-- align dollar sign
 - desktop view
 
 ### Useful resources
