@@ -25,7 +25,7 @@ header {
 
 header,
 main {
-  max-width: Min(87%, 1000px);
+  max-width: Min(87%, 1100px);
   margin: auto;
 }
 
@@ -130,5 +130,64 @@ main {
 
 .bg-bottom {
   display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 100vh;
+  }
+  .bg-top {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .cards-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card {
+    margin: 0;
+    padding: 2rem;
+  }
+  .card + .card {
+    margin-top: 0;
+  }
+  .feature {
+    padding: 1rem 5rem;
+  }
+  .card--professional {
+    padding: 3.5rem 2rem;
+  }
+  .bg-bottom {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -3;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -84,7 +84,6 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 ### Continued development
 
 - how to make custom toggle
-- desktop view
 
 ### Useful resources
 

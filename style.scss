@@ -38,7 +38,7 @@ header {
 
 header,
 main {
-  max-width: Min(87%, 1000px);
+  max-width: Min(87%, 1100px);
   margin: auto;
 }
 
@@ -141,4 +141,46 @@ main {
 
 .bg-bottom {
   display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    @include flex(column, center, center);
+    min-height: 100vh;
+  }
+
+  .bg-top {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .cards-wrapper {
+    @include flex(row, center, center);
+  }
+
+  .card {
+    margin: 0;
+    padding: 2rem;
+  }
+
+  .card + .card {
+    margin-top: 0;
+  }
+
+  .feature {
+    padding: 1rem 5rem;
+  }
+
+  .card--professional {
+    padding: 3.5rem 2rem;
+  }
+
+  .bg-bottom {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -3;
+  }
 }
