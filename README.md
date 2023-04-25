@@ -25,12 +25,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![desktop screenshot](./images/desktop-screen.png)
+![mobile screenshot](./images/mobile-screen.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/lidiakrajewska/pricing-component-with-toggle-master](https://github.com/lidiakrajewska/pricing-component-with-toggle-master)
+- Live Site URL: [https://lidiakrajewska.github.io/pricing-component-with-toggle-master/](https://lidiakrajewska.github.io/pricing-component-with-toggle-master/)
 
 ## My process
 
