@@ -3,6 +3,7 @@ $light-grayish-blue: hsl(234, 14%, 74%);
 $grayish-blue: hsl(233, 13%, 49%);
 $dark-grayish-blue: hsl(232, 13%, 33%);
 $gradient: linear-gradient(145deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+$violet: hsl(237, 61%, 66%);
 $font: "Montserrat", sans-serif;
 
 @mixin flex($direction, $justify, $align) {
@@ -64,6 +65,7 @@ main {
   display: inline-block;
   width: 52px;
   height: 31px;
+  transition: all 0.2s ease;
 }
 
 /* Hide default HTML checkbox */
@@ -135,9 +137,13 @@ input:checked + .slider:before {
   font-size: 1.1rem;
 }
 
+.price-wrapper {
+  @include flex(row, center, center);
+  color: $dark-grayish-blue;
+}
+
 .price {
   padding: 1.5rem 0;
-  color: $dark-grayish-blue;
   font-size: 4.5rem;
 }
 
@@ -172,7 +178,7 @@ input:checked + .slider:before {
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 7px;
 }
 
@@ -180,7 +186,8 @@ input:checked + .slider:before {
   background: $gradient;
   color: white;
 
-  .price {
+  .price,
+  .dollar {
     color: white;
   }
 
@@ -194,7 +201,7 @@ input:checked + .slider:before {
 
   .more-btn {
     background: white;
-    color: hsl(237, 61%, 66%);
+    color: $violet;
   }
 }
 
@@ -234,6 +241,10 @@ input:checked + .slider:before {
     width: 100%;
   }
 
+  .switch:hover {
+    opacity: 0.7;
+  }
+
   .cards-wrapper {
     @include flex(row, center, center);
   }
@@ -251,8 +262,20 @@ input:checked + .slider:before {
     padding: 1rem 5rem;
   }
 
+  .more-btn:hover {
+    background: transparent;
+    color: $violet;
+    border: solid 1px $violet;
+    transition: all 0.2s ease;
+  }
+
   .card--professional {
     padding: 3.5rem 2rem;
+    .more-btn:hover {
+      background: transparent;
+      color: white;
+      border: solid 1px white;
+    }
   }
 
   .bg-bottom {

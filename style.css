@@ -62,6 +62,8 @@ main {
   display: inline-block;
   width: 52px;
   height: 31px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 /* Hide default HTML checkbox */
@@ -133,9 +135,25 @@ input:checked + .slider:before {
   font-size: 1.1rem;
 }
 
+.price-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #494c5f;
+}
+
 .price {
   padding: 1.5rem 0;
-  color: #494c5f;
   font-size: 4.5rem;
 }
 
@@ -170,7 +188,7 @@ input:checked + .slider:before {
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 7px;
 }
 
@@ -179,7 +197,8 @@ input:checked + .slider:before {
   color: white;
 }
 
-.card--professional .price {
+.card--professional .price,
+.card--professional .dollar {
   color: white;
 }
 
@@ -241,6 +260,9 @@ input:checked + .slider:before {
   .main-wrapper {
     width: 100%;
   }
+  .switch:hover {
+    opacity: 0.7;
+  }
   .cards-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -266,8 +288,20 @@ input:checked + .slider:before {
   .feature {
     padding: 1rem 5rem;
   }
+  .more-btn:hover {
+    background: transparent;
+    color: #7379dd;
+    border: solid 1px #7379dd;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
   .card--professional {
     padding: 3.5rem 2rem;
+  }
+  .card--professional .more-btn:hover {
+    background: transparent;
+    color: white;
+    border: solid 1px white;
   }
   .bg-bottom {
     display: block;
