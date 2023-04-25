@@ -1,4 +1,4 @@
-const toggle = document.querySelector(".switch input");
+const toggle = document.querySelector("#period-toggle");
 const prices = document.querySelectorAll(".price");
 
 toggle.checked = false;
